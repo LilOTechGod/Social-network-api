@@ -1,11 +1,11 @@
-const { Schema, Types } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema(
     {
-        userId: {
-            type: Schema.Types.ObjectId,
-            default: () => new Types.ObjectId(),
-        },
+        // userId: {
+        //     type: Schema.Types.ObjectId,
+        //     default: () => new Types.ObjectId(),
+        // },
         username: {
             type: String,
             unique: true,
@@ -29,9 +29,8 @@ const userSchema = new Schema(
     },
     {
         toJSON: {
-          getters: true,
+          virtuals: true,
         },
-        id: false,
     }
 );
 
@@ -39,4 +38,5 @@ userSchema.virtual('friendCount').get(function () {
     return this.friends.length;
 });
 
-module.exports = userSchema;
+const User = model('User', userSchema);
+module.exports = User;
