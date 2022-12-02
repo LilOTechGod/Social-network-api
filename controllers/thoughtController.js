@@ -30,7 +30,7 @@ module.exports = {
     // Delete a thought
     deleteThought(req, res) {
         Thought.findOneAndDelete({ id: req.params.thoughtId })
-            .then((deletedThought) => res.json({ message: 'Thought deleted!' }))
+            .then((deleteThought) => res.json({ message: 'Thought deleted!' }))
             .catch((err) => res.status(500).json(err));
     },
     // Update a thought 
@@ -56,7 +56,7 @@ module.exports = {
     },
     // delete a reaction 
     deleteReaction(req,res) {
-        Thought.findOneAndUpdate({id:req.params.thoughtId}, {$pull:  {reactions:{reactionId: req.params.reactionId}}}, {new:true})
+        Thought.findOneAndDelete({id:req.params.thoughtId}, {$pull:  {reactions:{reactionId: req.params.reactionId}}}, {new:true})
         .then((response) => res.status(200).json(response))
         .catch((err) => res.status(500).json(err));
 
