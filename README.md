@@ -19,7 +19,17 @@ Bown below I wil be demonstrating it's functionality use insomnia as my front en
 
 ## Usage:
 
+#### Demo of Get, Get single user, Post, and Put route for User.
+[Untitled_ Dec 5, 2022 11_58 PM.webm](https://user-images.githubusercontent.com/112797175/205833338-6139740c-19cc-4d34-aff7-f7a6eaff0d26.webm)
 
+#### Demo of Delete, Post (add friend) route for User.
+[Untitled_ Dec 6, 2022 12_15 AM.webm](https://user-images.githubusercontent.com/112797175/205836150-967b09f6-2bca-4b23-a001-5842b31ed549.webm)
+
+#### Demo of Get, Get single user, Post, and Put route for Thought.
+[Untitled_ Dec 6 2022 12_40 AM.webm](https://user-images.githubusercontent.com/112797175/205840824-0e5c88c4-9205-41f9-bd8d-0320c339d3fc.webm)
+
+#### Demo of Delete, Post (create reaction) route for Thought.
+[Untitled_ Dec 6, 2022 12_41 AM.webm](https://user-images.githubusercontent.com/112797175/205841101-cf95e7a3-6fb7-48e8-96ec-fb5937f33419.webm)
 
 ## Future Developments:
 
